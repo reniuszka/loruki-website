@@ -18,7 +18,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* always specify font size in html, 1rem is multiplier of defined size, so 63.5% =10px = 1rem */
+/* 62.5% =10px = 1rem */
 html {
   font-size: 62.5%;
 }
@@ -160,12 +160,12 @@ pre {
   right: 0;
   left: 0;
   background-color: white;
-  /* transform we use to scale, rotate, translate, skew  */
+  
   transform: skewY(-3deg);
   -webkit-transform: skewY(-3deg);
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
-  /* prefeix versions to make sure it works in all browsers- adding webkit */
+ 
 }
 
 /* STATS */
@@ -195,7 +195,7 @@ pre {
   grid-template-rows: repeat(2, 1fr);
 }
 
-/* when I want to take the fist item(child) - .cli .grid > *:first-child */
+
 .cli .grid > *:first-child {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
